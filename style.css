@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@600;700&display=swap');
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+:root {
+        --color-yellow: #FFC017;
+        --color-grey: #72747e
+}
+
+li {
+    list-style: none;
+}
+button {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border: transparent;
+}
+
+.margin-sides {
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+/* Nav */
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--color-yellow);
+    border-bottom: solid 1px;
+    transition: background-color 200ms linear;
+    z-index: 1;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    gap: 15px;
+    font-size: 1em;
+    align-items: center;
+}
+.nav-list button {
+    padding: 0.8em 1em;
+    transition: background-color 200ms linear;
+}
+
+/* hero section */ 
+.hero-section {
+    padding-top: 5em;
+    background-color: var(--color-yellow);
+    border-bottom: solid 1px;
+    display: flex;
+}
+.m {
+    z-index: 0;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    width: 40%;
+}
+.text-section h1 {
+    font-size: 5em;
+    font-family: 'Noto Serif NP Hmong', serif;
+}
+.text-section h2 {
+    font-size: 1.5em;
+}
+
+.text-section button {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    padding: 0.5em 2.5em;
+}
+
+/* Trending section */
+.trending-section-container {
+    margin-top: 2em;
+    border-bottom: solid 1px;
+    padding-bottom: 2em;
+}
+.trending-flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+.trending-title {
+    display: flex;
+    align-items: center;
+}
+.trending-section span:first-of-type {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.trending-item {
+    margin-block: 15px;
+    margin-left: 2%;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.trending-item h6 img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 0;
+}
+.trending-item h6 span {
+    margin-left: 5px;
+}
+.trending-item h5 {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.trending-item p {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+.trending-item p img {
+    margin-left: 1em;
+}
+.trending-item h2 {
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.336);
+    left: -52px;
+    bottom: -40px;
+    z-index: -1;
+}
+
+/* posts */
+.low-big-container {
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+}
+.post {
+    display: flex;
+    max-width: 44vw;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.post-img img {
+    width: 200px;
+    aspect-ratio: auto 200 / 134;
+    height: 134px;
+}
+
+.post-text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-right: 20px;
+
+}
+.post-text h6 img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.post-text button {
+    background-color: #E6E6E6;
+    color: grey;
+    padding: 0.3em 0.5em;
+    margin-inline: 0.7em;
+}
+.flex-item-lower-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-left {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation*/
+.navigation-section {
+    max-width: 30vw;
+}
+
+.navigation-section h5 {
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.tags-container {
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+    border-bottom: solid 1px #80808066;
+}
+.tags-container button {
+    background-color: transparent;
+    color: grey;
+    border: solid 1px #80808066;
+    border-radius: initial;
+    margin: 4px;
+    padding: 0.5em 1em;
+}
+.navigation-buttons {
+    max-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navigation-buttons a {
+    text-decoration: none;
+    color: var(--color-grey);
+    padding: 0.7em;
+}
+/* JS added classes */
+.scrolled-bg {
+    background-color: white;
+    transition: background-color 200ms linear;
+}
+
+.scrolled-button {
+    background-color: green;
+    transition: background-color 200ms linear;
+}
+
+/* responsivness */
+@media only screen and (max-width: 1000px) {
+    .post {
+        max-width: 53vw;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .text-section {
+        font-size: 0.7rem;
+    }
+    .trending-section-container {
+        font-size: 0.8rem;
+    }
+    .margin-sides {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    .low-big-container {
+        font-size: 0.7rem;
+    }
+    .post {
+        max-width: 53vw;
+    }
+    .post-text {
+        font-size: 0.8rem;
+    }
+    .post-img img {
+        width: 140px;
+        aspect-ratio: auto 140/ 45;
+        height: 100px;
+    }
+    .tags-container button {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        font-size: 0.7rem;
+        height: 10vh;
+    }
+    nav {
+        height: 10vh;
+    }
+    nav img {
+        width: 6rem;
+        margin-right: 5px;
+    }
+    nav button {
+
+        padding: 0.1rem 0.8rem;
+     font-size: 0.6rem;
+}
+    .hero-section {
+        height: 49vh;
+        padding-top: 0;
+    }
+    .text-section h1 {
+        font-size: 3rem;
+    }
+    .text-section h2 {
+        font-size: 0.9rem;
+    }
+    .posts-container {
+        flex-direction: column;
+        row-gap: 4em;
+        align-items: center;
+    }
+    .post {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        max-width: 70vw;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 2em;
+    }
+    .tags-container button {
+        font-size: 0.7rem;
+    }
+    .margin-sides {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .low-big-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation-section {
+        max-width: 75vw;
+        margin-top: 2em;
+    }
+    .post-img img {
+        width: 180px;
+        aspect-ratio: auto 200/ 140;
+        height: 120px;
+    }
+    .post-text button {
+        font-size: 0.5rem;
+    }
+}
