@@ -46,6 +46,9 @@ nav {
     font-size: 1em;
     align-items: center;
 }
+.nav-list li:hover {
+    cursor: pointer;
+}
 .nav-list button {
     padding: 0.8em 1em;
     transition: background-color 200ms linear;
@@ -241,6 +244,13 @@ nav {
     transition: background-color 200ms linear;
 }
 
+button:hover {
+    cursor: pointer;
+}
+a:hover {
+    cursor: pointer;
+}
+
 /* responsivness */
 @media only screen and (max-width: 1000px) {
     .post {
@@ -339,5 +349,14 @@ nav {
     }
     .post-text button {
         font-size: 0.5rem;
+    }
+    .trending-item h2 {
+        font-size: 1.5em;
+        left: -30px;
+        bottom: -30px;
+
+    }
+    .m {
+        margin-top: 45px;
     }
 }

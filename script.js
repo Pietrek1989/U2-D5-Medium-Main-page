@@ -6,7 +6,7 @@ const headerChange = function () {
     console.log("it went there");
     header.classList.add("scrolled-bg");
     button.classList.add("scrolled-button");
-  } else if (window.pageXOffset < 500) {
+  } else if (window.pageYOffset < 500) {
     header.classList.remove("scrolled-bg");
     button.classList.remove("scrolled-button");
   }
